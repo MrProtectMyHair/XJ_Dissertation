@@ -6,35 +6,50 @@
 
 ## Introduction
 
-In this repository, the experimental results and the related files are included. 
+The experimental results and related files are included in this repository. 
 
-### Original_Speeches
+### Natural_Speeches
 
-There are 10 .wav files selected from the Speech Recognition Corpus called **LibriSpeech**. 
-The speeches are from four different speakers, two male speakers and two female speakers. And the duration of the speeches are from 3 sec to 24 sec. Also, the official transcription of the speeches were displayed.
+#### LibriSpeech
+There are 24 .wav files selected from the Speech Recognition Corpus called **LibriSpeech**. 
+The speeches are from 8 different speakers, 4 male speakers and 4 female speakers. The durations of the speeches are from 3 sec to 24 sec. Also, the official transcriptions of the speeches were displayed.
 
 The complete corpus can be downloaded from the link: https://www.openslr.org/12
 The details of this corpus can be found: https://ieeexplore.ieee.org/document/7178964
 
+#### VCC 2018
+96 .wav files were selected from the vcc2018_training set
+The speeches were from four female speakers and four male speakers.
+The details of the original corpus can be found: https://vc-challenge.org/vcc2018/index.html
+
 ### WhisperX_Results
 
-These are the speech recognition results of the speeches by using the WhisperX
+These are the speech recognition results of the speeches using the WhisperX
 
-WhisperX: https://github.com/m-bain/whisperX
+WhisperX was implemented based on the original repository: https://github.com/m-bain/whisperX
 
 ### Synthesized_Speeches
 
-The text recognised were then be used to synthezed into speeches by using a pretrained TTS model. A VITS model trained from vctk was chosen. 
+#### VITS
 
-Since we would like to evaluate the TTS qualities, and differences of the speakers may influence the scores of the evaluation, each text was synthesized to 20 different timbres. 20 female timbres and 20 male timbres were selected (the selection is random). If the original speech is from a female speaker, the synthesized speeches will also be in female voice, and vice versa.
+The text recognised was then used to synthesize into speeches by using a pre-trained TTS model. A VITS model trained from a dataset called vctk was chosen. 
 
-The detail of the TTS model: https://github.com/coqui-ai/TTS
+Since we would like to evaluate the TTS qualities and differences of the speakers may influence the scores of the evaluation, each text was synthesized to 20 different timbres. 20 female voices and 20 male voices were selected (the selection is random). If the original speech is from a female speaker, the synthesized speeches will also be in the female voices, and vice versa.
+
+The detail of the TTS model implementation was: https://github.com/coqui-ai/TTS
+
+#### ChatTTS
+
+Similar to the TTS process with VITS, I also selected 20 male voices and 20 female voices from https://github.com/6drf21e/ChatTTS_Speaker/tree/main?tab=readme-ov-file 
+This website ranked 2600 seeds for diffrent voices and scored the voices. I manually chose 20 seeds in each gender with highest rank_single, which represent that these voice have the highest stability on single text generation.
+The implementation was achieved by using the package in https://github.com/CCmahua/ChatTTS-Enhanced.
 
 ### TTS Quality Evaluation Results
 
-The original speeches and the synthesized speeches were both evaluated through MOSNet, a deep learning based speech quality evaluation method. The results are recorded in results.xlsx.
+The original speeches and the synthesized speeches were both evaluated through MOSNet, a deep learning-based speech quality evaluation method. The results are recorded in results.xlsx.
+The implementation step was introduced in this fork: https://github.com/MrProtectMyHair/MOSNet
 
-MOSNet: https://github.com/lochenchou/MOSNet
+The original MOSNet: https://github.com/lochenchou/MOSNet
 
 ---
 ## Document Structure

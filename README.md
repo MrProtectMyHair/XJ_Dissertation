@@ -8,7 +8,7 @@
 
 The experimental results and related files are included in this repository. 
 
-### Natural_Speeches
+### Human_Speeches
 
 #### LibriSpeech
 There are 24 .wav files selected from the Speech Recognition Corpus called **LibriSpeech**. 

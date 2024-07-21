@@ -49,8 +49,6 @@ The implementation was achieved by using the package in https://github.com/CCmah
 The original speeches and the synthesized speeches were both evaluated through MOSNet, a deep learning-based speech quality evaluation method. The results are recorded in results.xlsx.
 The implementation step was introduced in this fork: https://github.com/MrProtectMyHair/MOSNet
 
-The original MOSNet: https://github.com/lochenchou/MOSNet
-
 ---
 ## Document Structure
 + Original_Speeches

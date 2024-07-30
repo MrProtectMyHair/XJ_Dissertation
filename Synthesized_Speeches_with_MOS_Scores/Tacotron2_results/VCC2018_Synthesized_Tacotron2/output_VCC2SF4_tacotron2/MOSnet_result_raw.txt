@@ -1,0 +1,13 @@
+./customed/20006.wav 3.049
+./customed/20011.wav 3.060
+./customed/20016.wav 2.940
+./customed/20029.wav 2.966
+./customed/20032.wav 2.748
+./customed/20037.wav 3.100
+./customed/20048.wav 2.773
+./customed/20050.wav 2.705
+./customed/20066.wav 3.075
+./customed/20071.wav 2.598
+./customed/20073.wav 3.105
+./customed/20081.wav 2.956
+Average: 2.922916666666667

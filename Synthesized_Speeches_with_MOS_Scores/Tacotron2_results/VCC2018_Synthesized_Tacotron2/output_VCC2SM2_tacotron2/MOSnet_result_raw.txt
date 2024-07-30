@@ -1,0 +1,13 @@
+./customed/10006.wav 2.911
+./customed/10011.wav 2.981
+./customed/10016.wav 2.988
+./customed/10029.wav 2.824
+./customed/10032.wav 2.980
+./customed/10037.wav 2.956
+./customed/10048.wav 2.802
+./customed/10050.wav 2.884
+./customed/10066.wav 2.890
+./customed/10071.wav 2.892
+./customed/10073.wav 2.901
+./customed/10081.wav 2.989
+Average: 2.9164999999999996
